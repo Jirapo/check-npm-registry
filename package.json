@@ -1,6 +1,6 @@
 {
   "name": "check-npm-registry",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "check the quickest registry",
   "main": "index.js",
   "scripts": {

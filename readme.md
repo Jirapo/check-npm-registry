@@ -1,5 +1,11 @@
 This is a package which can check the fastest npm registry.
 
+## install
+
+```bash
+npm i packages-version-check -S
+```
+
 ## Usage
 
 The default registry list is: 
