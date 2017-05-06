@@ -3,7 +3,7 @@ This is a package which can check the fastest npm registry.
 ## install
 
 ```bash
-npm i packages-version-check -S
+npm i check-npm-registry -S
 ```
 
 ## Usage

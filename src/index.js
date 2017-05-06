@@ -10,12 +10,17 @@ import request from './request';
 const defaultRegistryList = ['http://registry.npm.taobao.org', 'http://registry.npmjs.org'];
 
 const requestUrl = url => request(`${url}/nowa`).then(() => url);
+const isUrl = str => /((\/\/)|^\.{0,2}\/).+/g.test(str);
 
 const check = async function(registryList) {
   let tempList = [...defaultRegistryList];
 
   if (registryList) {
-    tempList.concat(registryList);
+    if (typeof registryList === 'string' && isUrl(registryList)) {
+      tempList.concat(registryList);
+    } else if (registryList instanceof Array){
+      tempList.concat(registryList.filter(u => isUrl(u)));
+    }
   }
 
   const urls = new Set(tempList);

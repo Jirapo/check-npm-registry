@@ -8,8 +8,17 @@ const testUrls = [
 
 describe('test check registry', function() {
 
-  it('receive none param, return default npm registry ', function(done){
+  it('receive a none param, return default npm registry ', function(done){
     check()
+      .then(function(res){
+        console.log(res);
+        assert.ok(testUrls.includes(res));
+        done();
+      });
+  });
+
+  it('receive an incorrect param, return default npm registry ', function(done){
+    check('dsds')
       .then(function(res){
         console.log(res);
         assert.ok(testUrls.includes(res));
