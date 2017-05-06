@@ -16,3 +16,10 @@ checkRegistry('your_registry_url')
 checkRegistry([your_registry_url_array])
 
 ```
+
+## Test
+
+`npm run test`
+
+<img src="./screenshot" />
+
