@@ -2,6 +2,9 @@ This is a package which can check the fastest npm registry.
 
 ## Usage
 
+The default registry list is: 
+`http://registry.npm.taobao.org`, `http://registry.npmjs.org`.
+
 ```js
 import checkRegistry from 'check-npm-registry';
 
