@@ -21,5 +21,5 @@ checkRegistry([your_registry_url_array])
 
 `npm run test`
 
-<img src="./screenshot" />
+<img src="https://raw.githubusercontent.com/Jirapo/check-npm-registry/master/screenshot.png" />
 
