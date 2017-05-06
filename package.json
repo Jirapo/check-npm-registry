@@ -6,8 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
     "test": "mocha --require ./enable-power-assert.js test -t 5000",
-    "demo": "node dist/registry.js",
-    "testn": "node test/registry.test.js"
+    "commit": "git add . --all & git commit -m \"update\" & git push origin master"
   },
   "author": "",
   "license": "ISC",
